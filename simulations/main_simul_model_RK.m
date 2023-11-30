@@ -55,9 +55,43 @@ plot(tt,Klv,'red')
 plot(tt,Elv,'green')
 plot(tt,Llv,'blue')
 legend('K','E','L')
+hold off
 
 figure(2)
 plot3(Klv,Elv,Llv)
+hold on 
+plot3(4.5625,0.0115,0.4444,'Marker','*','Color','k') %P1*
+% plot3(21.24629,0.12504,0.4444,'*') %P2*
 xlabel('K')
 ylabel('E')
 zlabel('L')
+
+%% another trajectory starting from the fixed point
+% Runge-Kutta
+Klv(1)=4.5625;
+Elv(1)=0.0115;
+Llv(1)=0.4444;
+% N=(T-t0)/h;
+% tt= t0:h:T;
+%Runge-Kutta coefficients
+for n = 1:N
+    K1k = K_f(Klv(n), Elv(n), Llv(n));
+    K1e = E_f(Klv(n), Elv(n), Llv(n));
+    K1l = L_f(Klv(n), Elv(n), Llv(n));
+    K2k = K_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+    K2e = E_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+    K2l = L_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+    K3k = K_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+    K3e = E_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+    K3l = L_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+    K4k = K_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+    K4e = E_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+    K4l = L_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+    Klv(n+1) = Klv(n) + h*(K1k + 2*K2k + 2*K3k + K4k)/6;
+    Elv(n+1) = Elv(n) + h*(K1e + 2*K2e + 2*K3e + K4e)/6;
+    Llv(n+1) = Llv(n) + h*(K1l + 2*K2l + 2*K3l + K4l)/6;
+end
+
+hold on
+plot3(Klv,Elv,Llv)
+hold off
