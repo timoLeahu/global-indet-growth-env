@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{antoci_poverty_2011}
 Angelo Antoci, Marcello Galeotti, and Paolo Russu.
@@ -6,11 +6,63 @@ Angelo Antoci, Marcello Galeotti, and Paolo Russu.
   open-access natural resources.
 \newblock {\em Journal of Economic Theory}, 146(2):569--591, 2011.
 
+\bibitem{ayong_le_kama_sustainable_2001}
+Alain~D. Ayong Le~Kama.
+\newblock Sustainable growth, renewable resources and pollution.
+\newblock {\em Journal of Economic Dynamics and Control}, 25(12):1911--1918,
+  December 2001.
+
+\bibitem{bennett_indeterminacy_2000}
+Rosalind~L. Bennett and Roger E.~A. Farmer.
+\newblock Indeterminacy with {Non}-separable {Utility}.
+\newblock {\em Journal of Economic Theory}, 93(1):118--143, July 2000.
+
+\bibitem{berck_open-access_1984}
+Peter Berck and Jeffrey~M. Perloff.
+\newblock An {Open}-{Access} {Fishery} with {Rational} {Expectations}.
+\newblock {\em Econometrica}, 52(2):489--506, 1984.
+\newblock Publisher: [Wiley, Econometric Society].
+
 \bibitem{caravaggio_nonlinear_2018}
 Andrea Caravaggio and Mauro Sodini.
 \newblock Nonlinear {Dynamics} in {Coevolution} of {Economic} and
   {Environmental} {Systems}.
 \newblock {\em Frontiers in Applied Mathematics and Statistics}, 4, 2018.
+
+\bibitem{dalessandro_non-linear_2007}
+Simone D'Alessandro.
+\newblock Non-linear dynamics of population and natural resources: {The}
+  emergence of different patterns of development.
+\newblock {\em Ecological Economics}, 62(3):473--481, May 2007.
+
+\bibitem{eliasson_renewable_2004}
+Lùdvìk Elìasson and Stephen~J. Turnovsky.
+\newblock Renewable resources in an endogenously growing economy: balanced
+  growth and transitional dynamics.
+\newblock {\em Journal of Environmental Economics and Management},
+  48(3):1018--1049, November 2004.
+
+\bibitem{gordon_economic_1954}
+H.~Scott Gordon.
+\newblock The {Economic} {Theory} of a {Common}-{Property} {Resource}: {The}
+  {Fishery}.
+\newblock {\em Journal of Political Economy}, 62(2):124--142, April 1954.
+\newblock Publisher: The University of Chicago Press.
+
+\bibitem{hurwitz_conditions_1964}
+Adolf Hurwitz.
+\newblock On the conditions under which an equation has only roots with
+  negative real parts.
+\newblock In {\em Selected {Papers} on {Mathematical} {Trends} in {Control}
+  {Theory} by {R}. {Bellman}, {R}. {Kalaba} ({Eds}.)}, page 200. Dover
+  Publications, 1964.
+
+\bibitem{itaya_can_2008}
+Jun-ichi Itaya.
+\newblock Can environmental taxation stimulate growth? {The} role of
+  indeterminacy in endogenous growth models with environmental externalities.
+\newblock {\em Journal of Economic Dynamics and Control}, 32(4):1156--1180,
+  April 2008.
 
 \bibitem{matsuyama_increasing_1991}
 Kiminori Matsuyama.
@@ -19,10 +71,30 @@ Kiminori Matsuyama.
 \newblock {\em The Quarterly Journal of Economics}, 106(2):617--650, 1991.
 \newblock Publisher: Oxford University Press.
 
+\bibitem{schaefer_considerations_2019}
+Milner Schaefer.
+\newblock Some {Considerations} of {Population} {Dynamics} and {Economics} in
+  {Relation} to the {Management} of the {Commercial} {Marine} {Fisheries} 1.
+\newblock pages 33--45. October 2019.
+
+\bibitem{wirl_cyclical_1995}
+Franz Wirl.
+\newblock The {Cyclical} {Exploitation} of {Renewable} {Resource} {Stocks}
+  {May} {Be} {Optimal}.
+\newblock {\em Journal of Environmental Economics and Management},
+  29(2):252--261, September 1995.
+
 \bibitem{wirl_stability_1997}
 Franz Wirl.
 \newblock Stability and limit cycles in one-dimensional dynamic optimisations
   of competitive agents with a market externality.
 \newblock {\em Journal of Evolutionary Economics}, 7(1):73--89, February 1997.
+
+\bibitem{wirl_sustainable_2004}
+Franz Wirl.
+\newblock Sustainable growth, renewable resources and pollution: {Thresholds}
+  and cycles.
+\newblock {\em Journal of Economic Dynamics and Control}, 28(6):1149--1157,
+  March 2004.
 
 \end{thebibliography}

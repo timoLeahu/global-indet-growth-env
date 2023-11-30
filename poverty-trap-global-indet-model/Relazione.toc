@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {2}The model}{3}{}%
-\contentsline {section}{\numberline {3}Growth and Environmental pollution in the Solow model}{3}{}%
-\contentsline {section}{\numberline {4}Optimal growth and Environmental pollution}{3}{}%
-\contentsline {subsection}{\numberline {4.1}The Ramsey–Cass–Koopmans model with environmental pollution}{3}{}%
-\contentsline {section}{\numberline {5}Conclusion}{3}{}%
-\contentsline {section}{References}{4}{}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}The model and dynamics}{5}{section.2}%
+\contentsline {paragraph}{\underline {The model}.}{5}{section*.2}%
+\contentsline {paragraph}{\underline {Dynamics}.}{6}{section*.3}%
+\contentsline {section}{\numberline {3}Fixed points, stability and Hopf bifurcations}{7}{section.3}%
+\contentsline {section}{\numberline {4}Global analysis and Conclusion}{11}{section.4}%
+\contentsline {section}{References}{12}{section.4}%

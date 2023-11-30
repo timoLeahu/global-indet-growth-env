@@ -26,8 +26,18 @@
 \usepackage{comment}
 \usepackage{lipsum}
 \pgfplotsset{compat=1.16}
-%% my add
+%% my adds
+\graphicspath{{./Figure/}}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}[thm]{Lemma}
+
+
 
 
 \begin{document}
@@ -59,7 +69,7 @@
 \input{Sezioni/Sezione_1.tex}	
 \input{Sezioni/Sezione_2.tex}
 \input{Sezioni/Sezione_3.tex}
-\input{Sezioni/Sezione_4.tex}
+%\input{Sezioni/Sezione_4.tex}
 \input{Sezioni/Conclusion.tex}
 
 \clearpage

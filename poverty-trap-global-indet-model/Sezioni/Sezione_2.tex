@@ -1,4 +1,71 @@
-\section{The model}\label{Sec:model}
-TBA
+\section{The model and dynamics}\label{Sec:model_dyn}
+\paragraph{\underline{The model}.}
+The economy analyzed is constituted by a continuum of identical economic agents; the size of the population of agents is normalized to unity. At each instant of time $t \in [0,+\infty)$, the representative agent produces an output $Y(t)$ by the following Cobb–Douglas technology
+$$Y(t) = [K(t)]^\alpha[L(t)]^\beta[E(t)]^\gamma,\quad \text{with}\,\, \alpha+\beta<1\,\,  \text{and}\,\, \alpha, \beta, \gamma \,>0,$$
+where $K(t)$ is the stock of physical capital accumulated by the representative agent, $L(t)$ is the agent’s labor input and $E(t)$ is the stock of an open-access renewable natural resource.\footnote{In modeling production activity based on open-access natural resources (for example, fishery, forestry and tourism), the stock $E(t)$ of the environmental resource very often enters as an input in the production function: see, for example, Berck and Perloff \cite{berck_open-access_1984}, Ayong Le Kama \cite{ayong_le_kama_sustainable_2001}. Some authors use the Cobb–Douglas production function introduced by Gordon \cite{gordon_economic_1954} and Schaefer \cite{schaefer_considerations_2019}, with all the exponents equal to one. In the considered paper for this work the authors have chosen, instead, to work with a more general Cobb–Douglas function, allowing to analyze the case with constant social returns to scale.}
+The authors have assumed that the representative agent’s instantaneous utility function depends on leisure $1-L(t)$ and consumption $C(t)$ of the output $Y(t)$; precisely, they have considered the following additively non-separable function (type of function also used, among the others, by Bennett \cite{bennett_indeterminacy_2000} and Itaya \cite{itaya_can_2008})
+$$U\Big(C(t), L(t)\Big)=\frac{[C(t)(1-L(t))^{\epsilon}]^{1-\eta} -1}{1-\eta}$$
+where $\epsilon,\eta>0$ and $\eta \neq 1$. Moreover, we assume that the utility function is concave in $C$ and in $1-L$, i.e. $\eta > \frac{\epsilon}{1+\epsilon}$. The parameter $\epsilon$ denotes the weight on utility toward leisure and $\eta$ the inverse of the intertemporal elasticity of substitution in consumption.\footnote{(From Wikipedia) In economics, elasticity of intertemporal substitution (or intertemporal elasticity of substitution, EIS, IES) is a measure of responsiveness of the growth rate of consumption to the real interest rate.} This utility function displays a constant intertemporal elasticity of substitution and possesses the property that income and substitution effects exactly balance each other in the labor supply equation. 
 
+The evolution of $K(t)$ (assuming, for simplicity, the depreciation of $K$ to be zero) is represented by the differential equation
+\begin{equation} \label{eqn:K_dot}
+	\dot{K} = K^\alpha L^\beta E^\gamma -C.
+\end{equation}
+In order to model the dynamics of $E$ they started from the well-known logistic equation\footnote{The logistic function has been extensively used as a growth function of renewable resources; see, for example, Elìasson and Turnovsky \cite{eliasson_renewable_2004}.} and augment it by considering the negative impact due to the production process
+\begin{equation} \label{eqn:E_dot}
+	\dot{E} = E(\bar{E}-E)-\delta\bar{Y}
+\end{equation}
+where the parameter $\bar{E}$ represents the carrying capacity of the natural resource, $\bar{Y}$ is the economy-wide average output and the parameter $\delta>0$ measures the negative impact of $\bar{Y}$ on $E$.\footnote{Notice that $\bar{E}$ is the value that $E$ would reach, as $t\rightarrow +\infty$, in absence of the negative impact due to economic activity.} Under the specification \eqref{eqn:E_dot} of the environmental dynamics, the production process in our economy can be interpreted as an extractive activity. Its impact on the natural resource is given by the rate of harvest which is proportional to $\bar{Y}$. This assumption is usual in models of economic dynamics depending on open-access resources (see, for example, Berck and Perloff \cite{berck_open-access_1984}, Wirl \cite{wirl_cyclical_1995}, D'Alessandro \cite{dalessandro_non-linear_2007}) and has been also introduced in economic growth models where a natural resource-intensive sector is considered (see, for example, Ayong Le Kama \cite{ayong_le_kama_sustainable_2001}).
 
+We assume that the representative agent chooses the functions $C(t)$ and $L(t)$ (control variables) in order to solve the following problem
+\begin{equation} \label{max_utility_funct}
+	\max_{C,L} \int_{0}^{+\infty} \frac{[C(1-L)^{\epsilon}]^{1-\eta} -1}{1-\eta}\, e^{-\theta t} \,dt 
+\end{equation}
+subject to the two dynamic equations \eqref{eqn:K_dot} and \eqref{eqn:E_dot}, that are
+$$\dot{K} = K^\alpha L^\beta E^\gamma -C,$$
+$$\dot{E} = E(\bar{E}-E)-\delta\bar{Y}$$ 
+with $K(0)$ and $E(0)$ given, $K(t)$, $E(t)$, $C(t)\geq0$ and $0\leq L(t)\leq 1$ for every $t\in [0,+\infty)$; $\theta>0$ is the discount rate. $K(t)$ is also called state variable.
+
+The authors have assumed in the paper under study that capital $K$ is reversible, i.e., they allowed for disinvestment ($\dot{K}<0$) at some instants of time.\footnote{This amounts to assume that the economy they have been analyzing is a small open economy that can sell or buy capital goods abroad at a fixed price.} Furthermore they have assumed that, in solving problem \eqref{max_utility_funct}, the representative agent considers $\bar{Y}$ as exogenously determined since, being economic agents a continuum, the impact on $\bar{Y}$ of each one is null. However, since agents are identical, ex post $\bar{Y} = Y$ holds. This implies that the trajectories resulting from their model are not socially optimal but Nash equilibria, because no agent has an incentive to modify his choices if the others do not modify theirs.
+
+\paragraph{\underline{Dynamics}.}
+The current value Hamiltonian function associated to problem \eqref{max_utility_funct} is 
+(see Wirl \cite{wirl_stability_1997}) 
+$$H=\frac{[C(1-L)^{\epsilon}]^{1-\eta} -1}{1-\eta} + \Omega\cdot(K^\alpha L^\beta E^\gamma - C)$$
+where $\Omega$ is the co-state variable associated to $K$. By applying the Maximum Principle, the dynamics of the economy is described by the system
+\begin{equation} \label{eqn:K_dot_Omega_dot}
+\begin{split}
+	\dot{K}& =\dfrac{\partial H}{\partial\Omega} = K^\alpha L^\beta E^\gamma-C \\
+	\dot{\Omega}& =\theta\Omega-\dfrac{\partial H}{\partial K}=\Omega\cdot(\theta-\alpha K^{\alpha-1}L^\beta E^\gamma)
+\end{split}
+\end{equation}
+with the constraint (equation \eqref{eqn:E_dot}) $\dot{E} = E(\bar{E}-E)-\delta\bar{Y}$, where $C$ and $L$ satisfy the following conditions\footnote{Notice that the adopted utility function implies $C>0$ and $0<L<1$.} 
+\begin{equation} 
+\begin{split}
+	\frac{\partial H}{\partial C}& =C^{-\eta}(1-L)^{\epsilon(1-\eta)}-\Omega=0 \\
+	\frac{\partial H}{\partial L}& =0, \quad \text{i.e.}\,\, \beta(1-L)\Omega K^\alpha L^{\beta-1}E^\gamma-\epsilon C^{1-\eta}(1-L)^{\epsilon(1-\eta)}=0
+\end{split}
+\end{equation}
+
+Since their system meets the Mangasarian hypotheses\footnote{Are some particular condition (also known as Mangasarian-Fromowitz constraint qualification MFCQ) of the general KKT ones. For details search the KKT conditions into the website \url{https://www.wikiwand.com}.}, the above conditions plus the limit transversality condition $\lim_{t\rightarrow +\infty} \Omega(t)K(t)e^{-\theta t} = 0$ are sufficient for solving problem \eqref{max_utility_funct}. This is the case also if $\alpha+\beta+\gamma>1$ (remember I assumed $\alpha + \beta < 1$), because the stock $E$ is considered as a positive externality in the decision problem of the representative agent.\footnote{The procedure applied till here is the common one for deterministic optimization problems: Hamiltonian setting and maximum principle. Given an optimization problem subject to some conditions (here are the dynamics of $K$ and $E$), this technical procedure is based on the application of the Lagrangian function that is taking into account some multipliers (also called co-state variables) then one can rewrite down the problem in terms of the Hamiltonian function. Furthermore, one has to derive the first order conditions, and using the dynamic constraints, simplify those first order conditions. This gives a system of differential equations.}
+
+By replacing $\bar{Y}$ with $K^\alpha L^\beta E^\gamma$ , the Maximum Principle conditions yield a dynamic system with two state variables, $K$ and $E$, and one jumping variable, $\Omega$. Notice that, from 
+$$\epsilon C\frac{\partial H}{\partial C}+\frac{\partial H}{\partial L}=0$$
+one obtains
+\begin{equation} \label{eqn:deriv_C_f(L)}
+\begin{split}
+	C& =\frac{\beta}{\epsilon}(1-L)L^{\beta-1}K^\alpha E^\gamma \\
+	f(L)& :=\frac{\epsilon}{\beta}(1-L)^{\frac{\epsilon-\eta(1+\epsilon)}{\eta}}L^{1-\beta}=K^\alpha E^\gamma \Omega^{\frac{1}{\eta}}
+\end{split}
+\end{equation}
+Hence one can write the following system, equivalent to \eqref{eqn:K_dot_Omega_dot}
+\begin{equation} \label{eqn:K_dot_E_dot_L_dot}
+	\begin{split}
+		\dot{K} =&\ \frac{1}{\epsilon} K^\alpha E^\gamma  L^{\beta-1}[(\beta+\epsilon)L-\beta] \\
+		\dot{E} =&\ E(\bar{E}-E)-\delta K^\alpha L^\beta E^\gamma \\
+		\dot{L} =&\ \frac{f(L)}{f'(L)} \Big[\frac{\alpha}{\epsilon}K^{\alpha-1} E^\gamma  L^{\beta-1}[(\beta+\epsilon)L-\beta]+\gamma(\bar{E}-E-\delta K^\alpha L^\beta E^{\gamma-1})\\
+		&\ +\frac{1}{\eta}(\theta-\alpha K^{\alpha-1}L^\beta E^\gamma) \Big]
+	\end{split}
+\end{equation}
+
+In such a context, the jumping variable is $L$, instead of $\Omega$ ($L$ and $\Omega$ are related by \eqref{eqn:deriv_C_f(L)}). As a consequence, given the initial values of the state variables, $K_0$ and $E_0$, the representative agent has to choose the initial value $L_0$ of $L$.
