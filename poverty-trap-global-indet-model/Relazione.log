@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  30 NOV 2023 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  5 DEC 2023 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,7 +1095,7 @@ Package hyperref Info: Link coloring OFF on input line 43.
 \@outlinefile=\write6
 \openout6 = `Relazione.out'.
 
-<Relazione-frn.pdf, id=25, 597.50829pt x 845.0471pt>
+<Relazione-frn.pdf, id=29, 597.50829pt x 845.0471pt>
 File: Relazione-frn.pdf Graphic file (type pdf)
 <use Relazione-frn.pdf>
 Package pdftex.def Info: Relazione-frn.pdf  used on input line 46.
@@ -1159,31 +1159,53 @@ LaTeX Warning: Reference `fig:local_indeter' on page 4 undefined on input line
 LaTeX Warning: Reference `fig:limit_cyc_P1_from_P2' on page 4 undefined on inpu
 t line 26.
 
-) (Sezioni/Sezione_2.tex [4] [5]
+) (Sezioni/Sezione_2.tex [4] [5] [6]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 0.
 
 (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [6]) (Sezioni/Sezione_3.tex
+)) (Sezioni/Sezione_3.tex
 [7]
-<./Figure/graph_g(E).png, id=211, 600.2425pt x 469.755pt>
+<./Figure/graph_g(E).png, id=220, 600.2425pt x 469.755pt>
 File: ./Figure/graph_g(E).png Graphic file (type png)
 <use ./Figure/graph_g(E).png>
-Package pdftex.def Info: ./Figure/graph_g(E).png  used on input line 33.
+Package pdftex.def Info: ./Figure/graph_g(E).png  used on input line 46.
 (pdftex.def)             Requested size: 256.0748pt x 200.41377pt.
 
-Overfull \hbox (13.48608pt too wide) in paragraph at lines 26--37
+Overfull \hbox (13.48608pt too wide) in paragraph at lines 39--50
 \T1/cmr/m/n/10 By [], when two sta-tion-ary states ex-ist, $\OML/cmm/m/it/10 P[
 ] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 K[]; E[]; L[]\OT1/cmr/m/n/10 )$ \T1/cmr/m
 /n/10 and $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 K[]; E[]; L
 []\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 ,
  []
 
-[8] [9 <./Figure/graph_g(E).png>] [10]) (Sezioni/Conclusion.tex) [11]
-(Relazione.bbl [12
+[8] [9 <./Figure/graph_g(E).png>] [10] [11]
+<./Figure/plot_K_Ebar.png, id=285, 489.9906pt x 456.2646pt>
+File: ./Figure/plot_K_Ebar.png Graphic file (type png)
+<use ./Figure/plot_K_Ebar.png>
+Package pdftex.def Info: ./Figure/plot_K_Ebar.png  used on input line 150.
+(pdftex.def)             Requested size: 207.0021pt x 192.7507pt.
+<./Figure/plot_E_Ebar.png, id=286, 498.1812pt x 457.71pt>
+File: ./Figure/plot_E_Ebar.png Graphic file (type png)
+<use ./Figure/plot_E_Ebar.png>
+Package pdftex.def Info: ./Figure/plot_E_Ebar.png  used on input line 152.
+(pdftex.def)             Requested size: 207.0021pt x 190.18356pt.
+ [12]
+<./Figure/locally_attract_limit_cycle_fixPnt_P1.png, id=300, 640.89438pt x 376.
+90813pt>
+File: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png Graphic file (type png
+)
+<use ./Figure/locally_attract_limit_cycle_fixPnt_P1.png>
+Package pdftex.def Info: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png  us
+ed on input line 160.
+(pdftex.def)             Requested size: 276.00105pt x 162.31462pt.
+ [13 <./Figure/plot_K_Ebar.png (PNG copy)> <./Figure/plot_E_Ebar.png (PNG copy)
+>]) (Sezioni/Conclusion.tex)
+[14 <./Figure/locally_attract_limit_cycle_fixPnt_P1.png>] [15] [16]
+(Relazione.bbl [17
 
-]) [13] (Relazione.aux)
+]) [18] (Sezioni/AppendixA.tex) [19] (Relazione.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
@@ -1193,19 +1215,19 @@ L3 programming layer <2023-10-23>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 7998DC4559AFE2CD38A0D87ABE01A7B1;843.
+(rerunfilecheck)             Checksum: 58EF1B8CC50183474781DC89E1AF4A03;1023.
  ) 
 Here is how much of TeX's memory you used:
- 37822 strings out of 474717
- 838877 string characters out of 5758250
- 1951036 words of memory out of 5000000
- 59162 multiletter control sequences out of 15000+600000
+ 37876 strings out of 474717
+ 840362 string characters out of 5758250
+ 1949036 words of memory out of 5000000
+ 59201 multiletter control sequences out of 15000+600000
  573189 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,19n,117p,1659b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-0700.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecti0800.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+ 81i,19n,117p,1677b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
+0800.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx0700.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ectt0800.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\tcrm1000.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\ginti\AppData\Local\MiKTeX\fonts/pk/
@@ -1218,22 +1240,23 @@ AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Relazione.pdf (14 pages, 737809 bytes).
+onts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Relazione.pdf (20 pages, 978819 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 830 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

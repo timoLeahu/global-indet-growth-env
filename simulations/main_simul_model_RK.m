@@ -1,9 +1,11 @@
+%%%% Simulation of the 3 eqns dynamical system dot{K}, dot{E}, dot{L}
+% realization of the trajectories in the space starting 
+
 clear; close all;
 t0=0;
-T=9000;
-h=0.01;
-
-%% parameters
+T=15000;
+h=0.1;
+%% parameters of the model
 alpha = 0.1;
 beta = 0.8; 
 gamma = 0.58;
@@ -13,6 +15,9 @@ eta = 1.5;
 theta = 0.001;
 E_bar = 0.21;
 star_L = beta/(beta+epsil);
+% repr. ratio f(L*)/f'(L*)
+%f_ratio=(beta*epsil*eta)/((beta+epsil)*(eta*(beta+epsil)-(beta*epsil)));
+
 %% equations
 f = @(x) epsil*((1-x)^((epsil-eta*(1+epsil))/eta))*(x^(1-beta))/beta; 
 diff_f = @(x) -(epsil*((1-x)^((epsil-eta*(1+epsil))/eta))...
@@ -25,12 +30,18 @@ L_f = @(K, E, L) (f(L)/diff_f(L))*(alpha*(K^(alpha-1))*(L^(beta-1))*(E^gamma)...
     +(theta-alpha*(K^(alpha-1))*(L^beta)*(E^gamma))/eta);
 
 %% Runge-Kutta
+%>>> initial point - set 1
+% Klv(1)=1.1;
+% Elv(1)=0.01;
+% Llv(1)=0.254;
+%>>> initial point - set 2
 Klv(1)=1.1;
 Elv(1)=0.01;
-Llv(1)=0.254;
+Llv(1)=0.254;   
+
 N=(T-t0)/h;
 tt= t0:h:T;
-%Runge-Kutta coefficients
+% Runge-Kutta coefficients calcualtion of steps
 for n = 1:N
     K1k = K_f(Klv(n), Elv(n), Llv(n));
     K1e = E_f(Klv(n), Elv(n), Llv(n));
@@ -67,13 +78,11 @@ ylabel('E')
 zlabel('L')
 
 %% another trajectory starting from the fixed point
-% Runge-Kutta
+% initial point 
 Klv(1)=4.5625;
 Elv(1)=0.0115;
 Llv(1)=0.4444;
-% N=(T-t0)/h;
-% tt= t0:h:T;
-%Runge-Kutta coefficients
+% Runge-Kutta coefficients calcualtion of steps
 for n = 1:N
     K1k = K_f(Klv(n), Elv(n), Llv(n));
     K1e = E_f(Klv(n), Elv(n), Llv(n));
@@ -93,5 +102,14 @@ for n = 1:N
 end
 
 hold on
-plot3(Klv,Elv,Llv)
+plot3(Klv,Elv,Llv,'Color','r')
+hold off
+
+%% plane graph plotting
+figure(3)
+hold on
+plot(tt,Klv,'red')
+plot(tt,Elv,'green')
+plot(tt,Llv,'blue')
+legend('K','E','L')
 hold off

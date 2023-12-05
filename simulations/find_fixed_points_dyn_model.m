@@ -28,7 +28,8 @@ eqn3 = y+delta*(beta/(beta+epsil))^(beta/(1-alpha))*...
 %     +(theta-alpha*(x^(alpha-1))*(z^beta)*(y^gamma))/eta) == 0;
 
 
-sol = solve([eqn1, eqn2, eqn3], [x, y, z],'ReturnConditions', true, 'Real',true);
+sol = solve([eqn1, eqn2, eqn3], [x, y, z],'ReturnConditions', true,'Real',true);
 xSol = vpa(sol.x) % K
 ySol = vpa(sol.y) % E
 zSol = vpa(sol.z) % L
+%K1 = xSol(1)

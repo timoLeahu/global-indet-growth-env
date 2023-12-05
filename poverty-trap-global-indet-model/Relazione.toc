@@ -3,6 +3,7 @@
 \contentsline {section}{\numberline {2}The model and dynamics}{5}{section.2}%
 \contentsline {paragraph}{\underline {The model}.}{5}{section*.2}%
 \contentsline {paragraph}{\underline {Dynamics}.}{6}{section*.3}%
-\contentsline {section}{\numberline {3}Fixed points, stability and Hopf bifurcations}{7}{section.3}%
-\contentsline {section}{\numberline {4}Global analysis and Conclusion}{11}{section.4}%
-\contentsline {section}{References}{12}{section.4}%
+\contentsline {section}{\numberline {3}Fixed points, stability and Hopf bifurcations}{8}{section.3}%
+\contentsline {section}{\numberline {4}Global analysis and Conclusions}{14}{section.4}%
+\contentsline {section}{References}{17}{section.4}%
+\contentsline {section}{\numberline {A}Implementations in Matlab}{19}{appendix.A}%
