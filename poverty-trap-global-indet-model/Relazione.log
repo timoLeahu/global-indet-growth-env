@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  5 DEC 2023 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  10 DEC 2023 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,24 +1042,24 @@ Package: amsthm 2020/05/29 v2.20.6
  (Relazione.aux)
 \openout1 = `Relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 \c@lstlisting=\count386
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
@@ -1090,15 +1090,15 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 46.
 (Relazione.out) (Relazione.out)
 \@outlinefile=\write6
 \openout6 = `Relazione.out'.
 
-<Relazione-frn.pdf, id=29, 597.50829pt x 845.0471pt>
+<Relazione-frn.pdf, id=30, 597.50829pt x 845.0471pt>
 File: Relazione-frn.pdf Graphic file (type pdf)
 <use Relazione-frn.pdf>
-Package pdftex.def Info: Relazione-frn.pdf  used on input line 46.
+Package pdftex.def Info: Relazione-frn.pdf  used on input line 49.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [1
 Non-PDF special ignored!
@@ -1126,7 +1126,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 \newpage
+l.68 \newpage
               [1] (Sezioni/Sezione_1.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
@@ -1167,7 +1167,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )) (Sezioni/Sezione_3.tex
 [7]
-<./Figure/graph_g(E).png, id=220, 600.2425pt x 469.755pt>
+<./Figure/graph_g(E).png, id=222, 600.2425pt x 469.755pt>
 File: ./Figure/graph_g(E).png Graphic file (type png)
 <use ./Figure/graph_g(E).png>
 Package pdftex.def Info: ./Figure/graph_g(E).png  used on input line 46.
@@ -1181,18 +1181,18 @@ Overfull \hbox (13.48608pt too wide) in paragraph at lines 39--50
  []
 
 [8] [9 <./Figure/graph_g(E).png>] [10] [11]
-<./Figure/plot_K_Ebar.png, id=285, 489.9906pt x 456.2646pt>
+<./Figure/plot_K_Ebar.png, id=287, 489.9906pt x 456.2646pt>
 File: ./Figure/plot_K_Ebar.png Graphic file (type png)
 <use ./Figure/plot_K_Ebar.png>
 Package pdftex.def Info: ./Figure/plot_K_Ebar.png  used on input line 150.
 (pdftex.def)             Requested size: 207.0021pt x 192.7507pt.
-<./Figure/plot_E_Ebar.png, id=286, 498.1812pt x 457.71pt>
+<./Figure/plot_E_Ebar.png, id=288, 498.1812pt x 457.71pt>
 File: ./Figure/plot_E_Ebar.png Graphic file (type png)
 <use ./Figure/plot_E_Ebar.png>
 Package pdftex.def Info: ./Figure/plot_E_Ebar.png  used on input line 152.
 (pdftex.def)             Requested size: 207.0021pt x 190.18356pt.
  [12]
-<./Figure/locally_attract_limit_cycle_fixPnt_P1.png, id=300, 640.89438pt x 376.
+<./Figure/locally_attract_limit_cycle_fixPnt_P1.png, id=303, 640.89438pt x 376.
 90813pt>
 File: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png Graphic file (type png
 )
@@ -1201,11 +1201,48 @@ Package pdftex.def Info: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png  us
 ed on input line 160.
 (pdftex.def)             Requested size: 276.00105pt x 162.31462pt.
  [13 <./Figure/plot_K_Ebar.png (PNG copy)> <./Figure/plot_E_Ebar.png (PNG copy)
->]) (Sezioni/Conclusion.tex)
-[14 <./Figure/locally_attract_limit_cycle_fixPnt_P1.png>] [15] [16]
-(Relazione.bbl [17
+>]) (Sezioni/Conclusion.tex
+[14 <./Figure/locally_attract_limit_cycle_fixPnt_P1.png>]
+Overfull \hbox (1.91396pt too wide) in paragraph at lines 27--27
+[]\T1/cmr/bx/n/10 Lemma 7. []\T1/cmr/m/it/10 Let $\OML/cmm/m/it/10  \OT1/cmr/m
+/n/10 + \OML/cmm/m/it/10 ^^M < \OT1/cmr/m/n/10 1$ \T1/cmr/m/it/10 and as-sume t
+hat two equi-lib-ria ex-ist, $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = (\OML/cmm/
+m/it/10 E[]; K[]; L[]\OT1/cmr/m/n/10 )$
+ []
 
-]) [18] (Sezioni/AppendixA.tex) [19] (Relazione.aux)
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{thm.6}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.27 ...-2\alpha-\gamma)}{\alpha\beta\gamma\eta}$$
+                                                   are satisfied and that $P...
+]
+Overfull \hbox (5.24666pt too wide) in paragraph at lines 62--63
+[]\T1/cmr/m/n/10 Therefore, un-der the as-sump-tions of the the-o-rem, for any 
+ini-tial point $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E[]; K[]\OT1/cmr/m/n/10 )$
+ []
+
+[16]
+
+LaTeX Warning: Reference `fig:TBA' on page 17 undefined on input line 64.
+
+) [17
+pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
+been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.78 \clearpage
+               
+pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
+been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.78 \clearpage
+               ] (Relazione.bbl [18
+
+]) [19] (Sezioni/AppendixA.tex) [20]
+(Relazione.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
@@ -1215,13 +1252,13 @@ L3 programming layer <2023-10-23>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 58EF1B8CC50183474781DC89E1AF4A03;1023.
+(rerunfilecheck)             Checksum: 8BE61D54C38585F5DE7C614B1FE48C04;1020.
  ) 
 Here is how much of TeX's memory you used:
- 37876 strings out of 474717
- 840362 string characters out of 5758250
+ 37894 strings out of 474717
+ 840722 string characters out of 5758250
  1949036 words of memory out of 5000000
- 59201 multiletter control sequences out of 15000+600000
+ 59215 multiletter control sequences out of 15000+600000
  573189 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,19n,117p,1677b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1254,9 +1291,9 @@ nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Relazione.pdf (20 pages, 978819 bytes).
+Output written on Relazione.pdf (21 pages, 994290 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
+ 855 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

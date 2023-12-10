@@ -4,7 +4,7 @@
 
 clear; close all;
 t0=0;
-T=15000;
+T=3500;
 h=0.1;
 %% parameters of the model
 alpha = 0.1;
@@ -14,7 +14,7 @@ delta = 0.05;
 epsil = 1;
 eta = 1.5;
 theta = 0.001;
-E_bar = 0.21;
+E_bar = 0.17;
 star_L = beta/(beta+epsil);
 % repr. ratio f(L*)/f'(L*)
 %f_ratio=(beta*epsil*eta)/((beta+epsil)*(eta*(beta+epsil)-(beta*epsil)));
@@ -32,13 +32,9 @@ L_f = @(K, E, L) (f(L)/diff_f(L))*(alpha*(K^(alpha-1))*(L^(beta-1))*(E^gamma)...
 
 %% Runge-Kutta
 %>>> initial point - set 1
-% Klv(1)=1.1;
-% Elv(1)=0.01;
-% Llv(1)=0.254;
-%>>> initial point - set 2
-Klv(1)=1.1;
-Elv(1)=0.01;
-Llv(1)=0.254;   
+Klv(1)=3.1;
+Elv(1)=0.005;
+Llv(1)=0.22;   
 
 N=(T-t0)/h;
 tt= t0:h:T;
@@ -72,45 +68,41 @@ hold off
 figure(2)
 plot3(Klv,Elv,Llv)
 hold on 
-plot3(4.5625,0.0115,0.4444,'Marker','*','Color','k') %P1*
-% plot3(21.24629,0.12504,0.4444,'*') %P2*
+plot3(8.802396759,0.031860545540,0.4444,'Marker','*','Color','r') %P1*
+plot3(13.11009169,0.0591165274446,0.4444,'o') %P2*
 xlabel('K')
 ylabel('E')
 zlabel('L')
 
-%% another trajectory starting from the fixed point
-% initial point 
-Klv(1)=4.5625;
-Elv(1)=0.0115;
-Llv(1)=0.4444;
-% Runge-Kutta coefficients calcualtion of steps
-for n = 1:N
-    K1k = K_f(Klv(n), Elv(n), Llv(n));
-    K1e = E_f(Klv(n), Elv(n), Llv(n));
-    K1l = L_f(Klv(n), Elv(n), Llv(n));
-    K2k = K_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
-    K2e = E_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
-    K2l = L_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
-    K3k = K_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
-    K3e = E_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
-    K3l = L_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
-    K4k = K_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
-    K4e = E_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
-    K4l = L_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
-    Klv(n+1) = Klv(n) + h*(K1k + 2*K2k + 2*K3k + K4k)/6;
-    Elv(n+1) = Elv(n) + h*(K1e + 2*K2e + 2*K3e + K4e)/6;
-    Llv(n+1) = Llv(n) + h*(K1l + 2*K2l + 2*K3l + K4l)/6;
+for j=1:6
+    %% Runge-Kutta 2nd trajectory
+    %>>> initial point - set 1
+    Klv(1)=3.1+j;
+    Elv(1)=0.005;
+    Llv(1)=0.22;   
+    
+    N=(T-t0)/h;
+    tt= t0:h:T;
+    % Runge-Kutta coefficients calcualtion of steps
+    for n = 1:N
+        K1k = K_f(Klv(n), Elv(n), Llv(n));
+        K1e = E_f(Klv(n), Elv(n), Llv(n));
+        K1l = L_f(Klv(n), Elv(n), Llv(n));
+        K2k = K_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+        K2e = E_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+        K2l = L_f(Klv(n) + h*K1k/2, Elv(n) + h*K1e/2, Llv(n) + h*K1l/2);
+        K3k = K_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+        K3e = E_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+        K3l = L_f(Klv(n) + h*K2k/2, Elv(n) + h*K2e/2, Llv(n) + h*K2l/2);
+        K4k = K_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+        K4e = E_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+        K4l = L_f(Klv(n) + h*K3k, Elv(n) + h*K3e, Llv(n) + h*K3l);
+        Klv(n+1) = Klv(n) + h*(K1k + 2*K2k + 2*K3k + K4k)/6;
+        Elv(n+1) = Elv(n) + h*(K1e + 2*K2e + 2*K3e + K4e)/6;
+        Llv(n+1) = Llv(n) + h*(K1l + 2*K2l + 2*K3l + K4l)/6;
+    end
+    
+    plot3(Klv,Elv,Llv)
+    
 end
-
-hold on
-plot3(Klv,Elv,Llv,'Color','r')
-hold off
-
-%% plane graph plotting
-figure(3)
-hold on
-plot(tt,Klv,'red')
-plot(tt,Elv,'green')
-plot(tt,Llv,'blue')
-legend('K','E','L')
 hold off

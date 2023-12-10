@@ -9,7 +9,7 @@ delta = 0.05;
 epsil = 1;
 eta = 1.5;
 theta = 0.001;
-E_bar = 0.21;
+E_bar = 0.17;
 
 syms x y z
 eqn1 = z-(beta/(beta+epsil)) == 0;
