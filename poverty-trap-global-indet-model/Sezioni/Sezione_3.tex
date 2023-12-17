@@ -87,7 +87,19 @@ Another important theorem from the paper holds:
 	It follows that, when the stationary state is unique and $\alpha+\gamma\geq1$, then $det(J^*) > 0$. Vice versa, when two stationary states exist, implying $\alpha+\gamma<1$, then it follows from \eqref{eqn:sign_det_J*}, by observing Figure \ref{fig:graph_g(E)}, that $det(J^*)$ has the same sign of $g'(E^*)$, which proves the theorem. 
 \end{proof}
 
-Considering a non-generic case when a unique stationary state exists under the condition $\alpha+\gamma<1$, then $det(J^*)=0$ holds and the stationary state is not hyperbolic (in fact, a saddle-node bifurcation occurs). Consequently, if one looks for an attracting stationary state, that one have to restrict his/her analysis to the case when, under the assumption $\alpha+\gamma<1$, two stationary states exist, $P_1^*$ and $P_2^*$, with $E_1^* < E_2^*$ and $K_1^* < K_2^*$. \colorbox{yellow}{Here I aim to show that}, in such a context, $P_1^*$ can be \colorbox{yellow}{attracting for suitable values of the parameters} [do the simulations]. Along the trajectories belonging to the basin of attraction of $P_1^*$ the over-exploitation of the natural resource drives the economy towards a \textit{tragedy of commons} scenario.
+Considering a non-generic case when a unique stationary state exists under the condition $\alpha+\gamma<1$, then $det(J^*)=0$ holds and the stationary state is not hyperbolic (in fact, a saddle-node bifurcation occurs). Consequently, if one looks for an attracting stationary state, they have to restrict their analysis to the case when, under the assumption $\alpha+\gamma<1$, two stationary states exist, $P_1^*$ and $P_2^*$, with $E_1^* < E_2^*$ and $K_1^* < K_2^*$. Here I aim to show that, in such a context, $P_1^*$ can be attracting for suitable values of the parameters (see Figures \ref{fig:attract_P1_saddle_P2} and \ref{fig:attract_P1_saddle_P2_diff_view}). Along the trajectories belonging to the basin of attraction of $P_1^*$ the over-exploitation of the natural resource drives the economy towards a \textit{tragedy of commons} scenario.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.\linewidth]{phase_portrait_sink_P1_saddle_P2.png}
+	\caption{Phase portrait showing global indeterminacy in the space ($K,E,L$); parameter values: $\alpha=0.1$, $\beta=0.8$, $\gamma=0.58$, $\delta=0.05$, $\epsilon=1$, $\eta=1.5$, $\theta=0.001$, $\bar{E}=0.17$. Considering in particular two trajectories, one approaching the sink $P_1^*=(8.802396759,0.031860545540,0.4444)$ staring from the point ($K_1^*,E_1^*,L_0^1 =0.374591$), while the other approaching the saddle $P_2^*=(13.11009169,0.0591165274446,0.4444)$ starting from the point ($K_1^*,E_1^*,L_0^2 =0.34591$)}
+	\label{fig:attract_P1_saddle_P2}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.\linewidth]{phase_portrait_sink_P1_saddle_P2_bis.png}
+	\caption{Different view of the phase portrait.}
+	\label{fig:attract_P1_saddle_P2_diff_view}
+\end{figure}
 
 First of all, again if $\alpha+\gamma<1$, a necessary and sufficient condition for the existence of two stationary states is
 \begin{equation}
@@ -157,7 +169,7 @@ Notice that a Hopf bifurcation occurs also in this example and that indeterminac
 After performed the numerical simulations of the model using four-stage Runge-Kutta method (see appendix \ref{app:A}), in Figure \ref{fig:local_attract_lim_cycle_P1} is shown a locally attracting limit cycle around $P_1^*$ (which has a one-dimensional stable manifold) arisen via the Hopf bifurcation of Figure \ref{fig:plot_K_E_Ebar}. In such a case (with $\alpha+\gamma<1$), local indeterminacy occurs, since for every initial point $(K_0,E_0)$ close to the projection of the cycle in the plane $(K,E)$, there exists a continuum of initial values $L_0$ of $L$ such that the trajectory starting from $(K_0,E_0,L_0)$ approaches the cycle. In particular, even starting from the fixed point  $P_1^*$ one can observe the attraction to the limit cycle (trajectory in red color in the Figure \ref{fig:local_attract_lim_cycle_P1}).
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.8\linewidth]{locally_attract_limit_cycle_fixPnt_P1.png}
+	\includegraphics[width=.9\linewidth]{locally_attract_limit_cycle_fixPnt_P1.png}
 	\caption{Locally attracting limit cycle "around" $P_1^*$; parameter values: $\alpha=0.1$, $\beta=0.8$, $\gamma=0.58$, $\delta=0.05$, $\epsilon=1$, $\eta=1.5$, $\theta=0.001$.}
 	\label{fig:local_attract_lim_cycle_P1}
 \end{figure}

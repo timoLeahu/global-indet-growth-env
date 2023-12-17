@@ -1,10 +1,10 @@
-%%%% Simulation of the 3 eqns dynamical system dot{K}, dot{E}, dot{L}
+%%%% Simulation of the 3 dynamical system eqns dot{K}, dot{E}, dot{L}
 % realization of two trajectories in the space starting form an arbitrary
 % point and the fixed point P*. Code that generates the Fig 3 in report
 
 clear; close all;
 t0=0;
-T=3500;
+T=2500;
 h=0.1;
 %% parameters of the model
 alpha = 0.1;
@@ -32,11 +32,14 @@ L_f = @(K, E, L) (f(L)/diff_f(L))*(alpha*(K^(alpha-1))*(L^(beta-1))*(E^gamma)...
 
 %% Runge-Kutta
 %>>> initial point - set 1
-Klv(1)=3.1;
-Elv(1)=0.005;
-Llv(1)=0.22;   
+Klv(1)=9.002396759;
+Elv(1)=0.035860545540;
+Llv(1)=0.4059105885;   
+% Klv(1)=8.002396759;
+% Elv(1)=0.025860545540;
+% Llv(1)=0.3059105885; 
 
-N=(T-t0)/h;
+N=(T-t0)/h;% timesteps
 tt= t0:h:T;
 % Runge-Kutta coefficients calcualtion of steps
 for n = 1:N
@@ -74,12 +77,15 @@ xlabel('K')
 ylabel('E')
 zlabel('L')
 
-for j=1:6
+for j=1:2
     %% Runge-Kutta 2nd trajectory
     %>>> initial point - set 1
-    Klv(1)=3.1+j;
-    Elv(1)=0.005;
-    Llv(1)=0.22;   
+    % Klv(1)=3.1+j;
+    % Elv(1)=0.005;
+    % Llv(1)=0.22;   
+    Klv(1)=8.802396759;
+    Elv(1)=0.031860545540;
+    Llv(1)=0.3745910588+j*0.01; 
     
     N=(T-t0)/h;
     tt= t0:h:T;

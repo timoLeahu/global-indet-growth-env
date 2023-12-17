@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  10 DEC 2023 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  18 DEC 2023 00:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,29 +1180,59 @@ Overfull \hbox (13.48608pt too wide) in paragraph at lines 39--50
 []\OT1/cmr/m/n/10 )$\T1/cmr/m/n/10 ,
  []
 
-[8] [9 <./Figure/graph_g(E).png>] [10] [11]
-<./Figure/plot_K_Ebar.png, id=287, 489.9906pt x 456.2646pt>
+[8] [9 <./Figure/graph_g(E).png>]
+<./Figure/phase_portrait_sink_P1_saddle_P2.png, id=251, 929.3922pt x 469.2732pt
+>
+File: ./Figure/phase_portrait_sink_P1_saddle_P2.png Graphic file (type png)
+<use ./Figure/phase_portrait_sink_P1_saddle_P2.png>
+Package pdftex.def Info: ./Figure/phase_portrait_sink_P1_saddle_P2.png  used on
+ input line 93.
+(pdftex.def)             Requested size: 345.0pt x 174.2012pt.
+<./Figure/phase_portrait_sink_P1_saddle_P2_bis.png, id=252, 914.9382pt x 398.44
+86pt>
+File: ./Figure/phase_portrait_sink_P1_saddle_P2_bis.png Graphic file (type png)
+
+<use ./Figure/phase_portrait_sink_P1_saddle_P2_bis.png>
+Package pdftex.def Info: ./Figure/phase_portrait_sink_P1_saddle_P2_bis.png  use
+d on input line 99.
+(pdftex.def)             Requested size: 345.0pt x 150.2447pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11 <./Figure/phase_portrait_sink_P1_saddle_P2.png (PNG copy)> <./Figure/p
+hase_portrait_sink_P1_saddle_P2_bis.png (PNG copy)>] [12]
+<./Figure/plot_K_Ebar.png, id=299, 489.9906pt x 456.2646pt>
 File: ./Figure/plot_K_Ebar.png Graphic file (type png)
 <use ./Figure/plot_K_Ebar.png>
-Package pdftex.def Info: ./Figure/plot_K_Ebar.png  used on input line 150.
+Package pdftex.def Info: ./Figure/plot_K_Ebar.png  used on input line 162.
 (pdftex.def)             Requested size: 207.0021pt x 192.7507pt.
-<./Figure/plot_E_Ebar.png, id=288, 498.1812pt x 457.71pt>
+<./Figure/plot_E_Ebar.png, id=300, 498.1812pt x 457.71pt>
 File: ./Figure/plot_E_Ebar.png Graphic file (type png)
 <use ./Figure/plot_E_Ebar.png>
-Package pdftex.def Info: ./Figure/plot_E_Ebar.png  used on input line 152.
+Package pdftex.def Info: ./Figure/plot_E_Ebar.png  used on input line 164.
 (pdftex.def)             Requested size: 207.0021pt x 190.18356pt.
- [12]
-<./Figure/locally_attract_limit_cycle_fixPnt_P1.png, id=303, 640.89438pt x 376.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figure/locally_attract_limit_cycle_fixPnt_P1.png, id=305, 640.89438pt x 376.
 90813pt>
 File: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png Graphic file (type png
 )
 <use ./Figure/locally_attract_limit_cycle_fixPnt_P1.png>
 Package pdftex.def Info: ./Figure/locally_attract_limit_cycle_fixPnt_P1.png  us
-ed on input line 160.
-(pdftex.def)             Requested size: 276.00105pt x 162.31462pt.
- [13 <./Figure/plot_K_Ebar.png (PNG copy)> <./Figure/plot_E_Ebar.png (PNG copy)
->]) (Sezioni/Conclusion.tex
-[14 <./Figure/locally_attract_limit_cycle_fixPnt_P1.png>]
+ed on input line 172.
+(pdftex.def)             Requested size: 310.4979pt x 182.60468pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 <./Figure/plot_K_Ebar.png (PNG copy)> <./Figure/plot_E_Ebar.png (PNG c
+opy)>]) (Sezioni/Conclusion.tex [15 <./Figure/locally_attract_limit_cycle_fixPn
+t_P1.png>]
 Overfull \hbox (1.91396pt too wide) in paragraph at lines 27--27
 []\T1/cmr/bx/n/10 Lemma 7. []\T1/cmr/m/it/10 Let $\OML/cmm/m/it/10  \OT1/cmr/m
 /n/10 + \OML/cmm/m/it/10 ^^M < \OT1/cmr/m/n/10 1$ \T1/cmr/m/it/10 and as-sume t
@@ -1210,39 +1240,59 @@ hat two equi-lib-ria ex-ist, $\OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = (\OML/cmm/
 m/it/10 E[]; K[]; L[]\OT1/cmr/m/n/10 )$
  []
 
-[15
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{thm.6}) has b
 een already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.27 ...-2\alpha-\gamma)}{\alpha\beta\gamma\eta}$$
-                                                   are satisfied and that $P...
+l.40 	L
+       et $\alpha+\gamma<1$ and two equilibria, $P_1^*$ and $P_2^*$, exist, ...
 ]
 Overfull \hbox (5.24666pt too wide) in paragraph at lines 62--63
 []\T1/cmr/m/n/10 Therefore, un-der the as-sump-tions of the the-o-rem, for any 
 ini-tial point $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E[]; K[]\OT1/cmr/m/n/10 )$
  []
 
-[16]
 
 LaTeX Warning: Reference `fig:TBA' on page 17 undefined on input line 64.
 
-) [17
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
 been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \clearpage
-               
+l.65 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
 been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \clearpage
-               ] (Relazione.bbl [18
+l.65 
+     ]
 
-]) [19] (Sezioni/AppendixA.tex) [20]
-(Relazione.aux)
+LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 66.
+
+
+LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig' on page 18 undefined on input line 69.
+
+
+LaTeX Warning: Reference `fig' on page 18 undefined on input line 69.
+
+
+LaTeX Warning: Reference `fig' on page 18 undefined on input line 72.
+
+) [18] (Relazione.bbl [19
+
+]) [20] (Sezioni/AppendixA.tex) [21] (Relazione.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
@@ -1252,13 +1302,13 @@ L3 programming layer <2023-10-23>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 8BE61D54C38585F5DE7C614B1FE48C04;1020.
+(rerunfilecheck)             Checksum: 89C7399E849F458BD3380EDB2CF4D5ED;1015.
  ) 
 Here is how much of TeX's memory you used:
- 37894 strings out of 474717
- 840722 string characters out of 5758250
+ 37918 strings out of 474717
+ 841758 string characters out of 5758250
  1949036 words of memory out of 5000000
- 59215 multiletter control sequences out of 15000+600000
+ 59236 multiletter control sequences out of 15000+600000
  573189 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,19n,117p,1677b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1291,9 +1341,9 @@ nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Relazione.pdf (21 pages, 994290 bytes).
+Output written on Relazione.pdf (22 pages, 1707504 bytes).
 PDF statistics:
- 855 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 875 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,6 @@
+%>>> Code finds the fixed points of the main dynamical system 
+% based on chosen parameters
 clear
-% finding the fixed points of the main dynamical system 
 
 % params
 alpha = 0.1;

@@ -4,6 +4,6 @@
 \contentsline {paragraph}{\underline {The model}.}{5}{section*.2}%
 \contentsline {paragraph}{\underline {Dynamics}.}{6}{section*.3}%
 \contentsline {section}{\numberline {3}Fixed points, stability and Hopf bifurcations}{8}{section.3}%
-\contentsline {section}{\numberline {4}Global analysis and Conclusions}{14}{section.4}%
-\contentsline {section}{References}{18}{thm.10}%
-\contentsline {section}{\numberline {A}Implementations in Matlab}{20}{appendix.A}%
+\contentsline {section}{\numberline {4}Global analysis and Conclusion}{15}{section.4}%
+\contentsline {section}{References}{19}{thm.10}%
+\contentsline {section}{\numberline {A}Implementations in Matlab}{21}{appendix.A}%
