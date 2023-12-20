@@ -48,7 +48,7 @@ scenario emerges, characterized by over-exploitation of the natural resource and
 	\label{fig:graph_g(E)}
 \end{figure}
 
-Now, let $P^*=(K^*,E^*,L^*)$ be a stationary state of \eqref{eqn:K_dot_E_dot_L_dot} and consider the Jacobian matrix of the same system \eqref{eqn:K_dot_E_dot_L_dot} evaluated at $P^*$
+Now, let $P^*=(K^*,E^*,L^*)$ be a stationary state of the system \eqref{eqn:K_dot_E_dot_L_dot} and consider the Jacobian matrix of the same system evaluated at $P^*$
 $$
 Jac(P^*)=J^* =
 \begin{bmatrix}
@@ -123,9 +123,13 @@ The well-known Routh–Hurwitz Criterion\footnote{Technique used a lot in contro
 		\rho(J^*) &= -\sigma(J^*)\cdot trace(J^*)+det(J^*)>0
 	\end{split}
 \end{equation}
-The last inequality, in particular, guarantees the non-existence of complex eigenvalues with non-negative real part. In fact, when $\rho(J^*)$ crosses the origin value $0$, the real part of two complex conjugate eigenvalues changes sign, causing, generically, a Hopf bifurcation.
-Remember that the condition \eqref{eqn:det_J*_neg} is always verified at $P^*$ (see \eqref{eqn:sign_det_J*}). In fact, I performed a numerical simulation (the code is available in the appendix \ref{app:A}) using the values of parameters as defined in Figure \ref{fig:local_attract_lim_cycle_P1}, i.e. $\alpha=0.1$, $\beta=0.8$, $\gamma=0.58$, $\delta=0.05$, $\epsilon=1$, $\eta=1.5$, $\theta=0.001$, case of the attracting limit cycle with $\bar{E}=0.21$ (hence Hopf bifurcation has already occurred). In this case $\bar{E}>0.167159=E_A$, where $E_A$ comes from \eqref{eqn:E_A}, so one observes two fixed points $P_1^*=(4.5625,0.0115,0.4444)$ and $P_2^*=(21.2463,0.12505,0.4444)$. Considering $P_1^*$ (that is a saddle node with one dimensional stable manifold) and $J^*=Jac(P_1^*)$, I am going to show the conditions coming from the simulation, that are \\$det(J^*)=-2.2387e-07,\quad trace(J^*)=-1.2789e-04,$\\ $\sigma(J^*)=7.1892e-05,\quad \rho(J^*)=-2.1468e-07$. \\
+The last inequality, in particular, guarantees the non-existence of complex eigenvalues with non-negative real part. In fact, when $\rho(J^*)$ crosses the origin value $0$, the real part of two complex conjugate eigenvalues changes sign, causing, generically, a Hopf bifurcation.Remember that the condition \eqref{eqn:det_J*_neg} is always verified at $P^*$ (see \eqref{eqn:sign_det_J*}). \\
+In fact, as an example, I performed a couple of numerical simulations (the code is available in the appendix \ref{app:A}) using the values of parameters as defined in Figures \ref{fig:attract_P1_saddle_P2} and \ref{fig:local_attract_lim_cycle_P1}, i.e. $\alpha=0.1$, $\beta=0.8$, $\gamma=0.58$, $\delta=0.05$, $\epsilon=1$, $\eta=1.5$, $\theta=0.001$, and with different values of $\bar{E}$.\\
+In the first case of the attracting limit cycle with $\bar{E}=0.21$ (hence Hopf bifurcation has already occurred), $\bar{E}>0.167159=E_A$, where $E_A$ comes from \eqref{eqn:E_A}, so one observes two fixed points $P_1^*=(4.5625,0.0115,0.4444)$ and $P_2^*=(21.2463,0.12505,0.4444)$. Considering $P_1^*$ (that is a saddle node with one dimensional stable manifold) and $J^*=Jac(P_1^*)$, I am going to show the conditions coming from the simulation, that are \\$det(J^*)=-2.2387e-07,\quad trace(J^*)=-1.2789e-04,$\\ $\sigma(J^*)=7.1892e-05,\quad \rho(J^*)=-2.1468e-07$. \\
 The simulation shows also the three eigenvalues, that are one real negative and the other two complex conjugate with positive real part, and this result is correct since $\rho(J^*)<0$.\\
+In the second case (shown in the Figure \ref{fig:attract_P1_saddle_P2}) with the same parameter values but with $\bar{E}=0.17$ one can see again two different fixed points, one a sink and one a saddle. For the sink $P_1^*$ the results are\\ $det(J^*)=-6.5390e-08,\quad trace(J^*)=-0.0237,$\\ $\sigma(J^*)=3.1802e-05,\quad \rho(J^*)=6.8923e-07$,\\ 
+with 3 eigenvalues, one real negative and the other two complex conjugate with negative real part. Finally, for the saddle $P_2^*$ the results are\\ $det(J^*)=7.4620e-08,\quad trace(J^*)=-0.0524,$\\ $\sigma(J^*)=7.7007e-07,\quad \rho(J^*)=1.1501e-07$,\\ 
+with 3 eigenvalues, two real negative and the third real positive. \\
 As for the condition \eqref{eqn:cond_sigma_rho_stab}, the authors of the paper stated the following lemma.
 \begin{lemma} \label{lemma:3_condition_for_simga_pos}
 	If 
@@ -139,7 +143,7 @@ As for the condition \eqref{eqn:cond_sigma_rho_stab}, the authors of the paper s
 	$$ sign[\sigma(J^*)] = sign\Bigg[\Bigg(\frac{\beta+\epsilon}{\epsilon}-\frac{1}{\eta}\Bigg)(\bar{E}-2E^*)-\frac{\theta(1-\alpha)(\beta+\epsilon)}{\alpha\epsilon\eta}\Bigg] $$
 	So, since $E^*<(\frac{1-\alpha-\gamma}{2-2\alpha-\gamma})\bar{E}$, the assumptions of the lemma imply $\sigma(J^*)>0$.
 \end{proof}
-One shall now compute $trace(J^*)$; observing that $\frac{f(L^*)}{f'(L^*)}=\frac{\beta\epsilon\eta}{(\beta+\epsilon)[\eta(\beta+\epsilon)-\beta\epsilon]}$, one obtains $$trace(J^*)=a(\bar{E}-E^*)-E^*+b$$ where 
+I shall now compute $trace(J^*)$; observing that $\frac{f(L^*)}{f'(L^*)}=\frac{\beta\epsilon\eta}{(\beta+\epsilon)[\eta(\beta+\epsilon)-\beta\epsilon]}$, one obtains $$trace(J^*)=a(\bar{E}-E^*)-E^*+b$$ where 
 
 \begin{equation} \label{eqn:a_b_def}
 	a:=\frac{\eta[(1-\gamma)(\beta+\epsilon)-\beta\gamma\epsilon]-\beta\epsilon(1-\gamma)}{\eta(\beta+\epsilon)-\beta\epsilon}, \qquad b:=\frac{\beta\theta[\eta(\beta+\epsilon)-\epsilon]}{\eta(\beta+\epsilon)-\beta\epsilon}.
@@ -166,7 +170,7 @@ Notice that a Hopf bifurcation occurs also in this example and that indeterminac
 	\label{fig:plot_K_E_Ebar}
 \end{figure}
 
-After performed the numerical simulations of the model using four-stage Runge-Kutta method (see appendix \ref{app:A}), in Figure \ref{fig:local_attract_lim_cycle_P1} is shown a locally attracting limit cycle around $P_1^*$ (which has a one-dimensional stable manifold) arisen via the Hopf bifurcation of Figure \ref{fig:plot_K_E_Ebar}. In such a case (with $\alpha+\gamma<1$), local indeterminacy occurs, since for every initial point $(K_0,E_0)$ close to the projection of the cycle in the plane $(K,E)$, there exists a continuum of initial values $L_0$ of $L$ such that the trajectory starting from $(K_0,E_0,L_0)$ approaches the cycle. In particular, even starting from the fixed point  $P_1^*$ one can observe the attraction to the limit cycle (trajectory in red color in the Figure \ref{fig:local_attract_lim_cycle_P1}).
+After performed the numerical simulations of the model using four-stage Runge-Kutta method (see appendix \ref{app:A}), in Figure \ref{fig:local_attract_lim_cycle_P1} is shown a locally attracting limit cycle around $P_1^*$ (which has a one-dimensional stable manifold) arisen via the Hopf bifurcation of Figure \ref{fig:plot_K_E_Ebar}. In such a case (with $\alpha+\gamma<1$), local indeterminacy occurs, since for every initial point $(K_0,E_0)$ close to the projection of the cycle in the plane $(K,E)$, there exists a continuum of initial values $L_0$ of $L$ such that the trajectory starting from $(K_0,E_0,L_0)$ approaches the cycle. In particular, even starting from the fixed point  $P_1^*$ one can observe the attraction to the limit cycle (trajectory in red color in Figure \ref{fig:local_attract_lim_cycle_P1}).
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=.9\linewidth]{locally_attract_limit_cycle_fixPnt_P1.png}

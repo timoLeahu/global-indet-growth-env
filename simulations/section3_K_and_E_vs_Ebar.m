@@ -1,6 +1,6 @@
 clear; close all
-% generation of two graphs of the variation of coordinates 
-% of the fixed points of the model: plot K-E_bar & E-E_bar
+% generation of two graphs of the variation of coordinates K & E
+% of the fixed points P* of the model: plot K-E_bar & E-E_bar
 
 % params
 alpha = 0.1;
@@ -35,7 +35,7 @@ for i=1:size(E_bar,2)
     E2(i)=ySol(2); % E values for fixed point P2*
     end
 end
-figure(1)
+figure(1) %plot K vs E_bar
 hold on
 p(1)=plot(E_bar(1:8),K1(1:8),'LineWidth',2,'Color','k'); % trajectory of P1*(sink)
 p(2)=plot(E_bar(8:size(E_bar,2)),K1(8:size(K1,2)),'-.','LineWidth',1.5);% P1*(saddle)
@@ -49,7 +49,7 @@ legend(p,{'Locus of P_1^* as a sink','Locus of P_1^* as a saddle','Locus of P_2^
 box on
 hold off
 
-figure(2)
+figure(2) %plot E vs E_bar
 hold on
 p(1)=plot(E_bar(1:8),E1(1:8),'LineWidth',2,'Color','k');% trajectory of P1*(sink)
 p(2)=plot(E_bar(8:size(E_bar,2)),E1(8:size(E1,2)),'-.','LineWidth',1.5);% P1*(saddle)

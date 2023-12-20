@@ -1,6 +1,8 @@
 %%%% Simulation of the 3 dynamical system eqns dot{K}, dot{E}, dot{L}
 % realization of a series of trajectories in the space starting form 
-% different initial values points arbitrary chosen
+% different initial values points arbitrary chosen.
+% Result: generation of a phase portrait with two fixed points: one
+% attracting and one saddle (with 2-dim stable manifold).
 clear
 
 t0=0;

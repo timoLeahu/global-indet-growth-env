@@ -1,8 +1,8 @@
-clear; close all;
-t0=0;
-T=15000;
-h=0.1;
+% computation of the Jacobian matrix of fixed points, J*, determinant of
+% J*, trace of J* and other formula that characterize the stability
+% coming from the Routh–Hurwitz Criterion 
 
+clear
 %% parameters
 alpha = 0.1;
 beta = 0.8; 
@@ -11,13 +11,23 @@ delta = 0.05;
 epsil = 1;
 eta = 1.5;
 theta = 0.001;
-% E_bar = 0.167159;
-E_bar = 0.21;
+% E_bar = 0.167159; % value which g'(E_bar)
+E_bar = 0.17;
 star_L = beta/(beta+epsil);
-% def fixed point P* with E_bar=0.21
-K=4.5625;
-E=0.0115;
-L=beta/(beta+epsil);
+
+%% >> def fixed point P* with E_bar=0.21
+% K=4.5625;
+% E=0.0115;
+% L=star_L;
+
+%% >> def first fixed point P* with E_bar=0.17
+% K=8.802396759;
+% E=0.031860545540;
+% L=star_L;
+% >> def second fixed point P* with E_bar=0.17
+K=13.11009169;
+E=0.0591165274446;
+L=star_L;
 
 %% equations
 f = @(x) epsil*((1-x)^((epsil-eta*(1+epsil))/eta))*(x^(1-beta))/beta; 
@@ -39,9 +49,10 @@ fprintf("\nE_bar = %f vs. E_A = %f\n", E_bar, E_A)
 a1 = (eta*((1-gamma)*(beta+epsil)-beta*gamma*epsil)-beta*epsil*(1-gamma))/...
     (eta*(beta+epsil)-beta*epsil);
 b1 = (beta*theta*(eta*(beta+epsil)-epsil))/(eta*(beta+epsil)-beta*epsil);
-tr_J_anal =a1*(E_bar-E)-E+b1
+tr_J_anal =a1*(E_bar-E)-E+b1;
 % >------------------------------------------------------
 
+%% results:
 J = [0 0 dK_dL; dE_dK dE_dE dE_dL; dL_dK dL_dE dL_dL]
 det_J=det(J)
 tr_J=trace(J) %OK
@@ -49,4 +60,4 @@ sigma_J=dE_dE*dL_dL-dE_dL*dL_dE-dK_dL*dL_dK
 rho_J=-sigma_J*tr_J+det_J
 
 % eigenvalues
-e = eig(J)
+eigenvalues = eig(J)

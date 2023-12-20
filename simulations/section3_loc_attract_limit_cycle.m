@@ -1,6 +1,7 @@
 %%%% Simulation of the 3 eqns dynamical system dot{K}, dot{E}, dot{L}
 % realization of two trajectories in the space starting form an arbitrary
-% point and the fixed point P*. Code that generates the Fig 3 in report
+% point and the fixed point P*. 
+% Hopf bifurcation already occured here. -> limit cycle around P*
 
 clear; close all;
 t0=0;
@@ -31,7 +32,7 @@ L_f = @(K, E, L) (f(L)/diff_f(L))*(alpha*(K^(alpha-1))*(L^(beta-1))*(E^gamma)...
     +(theta-alpha*(K^(alpha-1))*(L^beta)*(E^gamma))/eta);
 
 %% Runge-Kutta
-%>>> initial point - set 1
+%>>> initial point arbitrary chosen- set 1
 % Klv(1)=1.1;
 % Elv(1)=0.01;
 % Llv(1)=0.254;
@@ -73,13 +74,12 @@ figure(2)
 plot3(Klv,Elv,Llv)
 hold on 
 plot3(4.5625,0.0115,0.4444,'Marker','*','Color','k') %P1*
-% plot3(21.24629,0.12504,0.4444,'*') %P2*
 xlabel('K')
 ylabel('E')
 zlabel('L')
 
 %% another trajectory starting from the fixed point
-% initial point 
+% initial point = fixed point P1*
 Klv(1)=4.5625;
 Elv(1)=0.0115;
 Llv(1)=0.4444;

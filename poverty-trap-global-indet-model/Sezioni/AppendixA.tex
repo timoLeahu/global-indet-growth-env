@@ -1,3 +1,13 @@
 \section{Implementations in Matlab}\label{app:A}
-TBA
-Need to put the code here or the names of the code file with some explanations.
+In this section I would like to show the implemented codes in Matlab of the developed theory above and some additional plots of dynamics. The line below I arranged in thin paragraphs where each of them shows the name of the Matlab file and some comments about it. These files are found in the folder of this work.\\
+I shall start with the publication of a code which finds the fixed points of the main model \eqref{eqn:K_dot_E_dot_L_dot} performing a solver based on the equations found in the proof of the Theorem \ref{thm:existence_and_num_equilibria}, i.e. the \eqref{eqn:fixed_pnt_satisfy}. This code is defined in the file \path{'section3_find_fixed_points_dyn_model.m'}. 
+
+The code which generates the Figures \ref{fig:attract_P1_saddle_P2} and \ref{fig:attract_P1_saddle_P2_diff_view} is defined in the file \path{'section3_phase_portrait_two_equilibria_sink_saddle.m'}. This code yields the simulations of the phase portrait, i.e. a set of trajectories starting from different regions of the space in order to observe the behavior. 
+
+The code which computes the Jacobian matrix of a specific fixed point, the determinant, the $\sigma$ and $\rho$ functions coming from the Routh-Hurwitz Criterion (as seen in section \ref{Sec:fix_pnt_stab_Hopf_bif} at \eqref{eqn:cond_sigma_rho_stab}) for stability is defined in \path{'section3_eigenvalues_of_Jacobian_and_stability.m'}. This code was used to generate the results discussed in the paragraph just above the Lemma \ref{lemma:3_condition_for_simga_pos}.
+
+The next code shown in the file \path{'section3_K_and_E_vs_Ebar.m'} is referred to the plot of a curve, which is divided in three parts, that indicates how the fixed point values of $K$ and $E$ change by varying the value of $\bar{E}$. The results of that are shown in the Figure \ref{fig:plot_K_E_Ebar}.
+
+The code yielding the locally attracting limit cycle in Figure \ref{fig:local_attract_lim_cycle_P1} is defined in the file \path{'section3_loc_attract_limit_cycle.m'}. The file contains the dynamic equations of the main model \eqref{eqn:K_dot_E_dot_L_dot} and the trajectories worked out using the 4th Runge-Kutta method.
+
+\colorbox{yellow}{TO DO: To be implemented figures and results for section 4}
