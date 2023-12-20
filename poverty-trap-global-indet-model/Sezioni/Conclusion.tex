@@ -59,14 +59,37 @@ At this point, one is able to prove the main theorem:
 \begin{proof}
 	See in the paper \cite{antoci_poverty_2011}, pg. 584. 
 \end{proof}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.\linewidth]{global_indeterminacy.png}
+	\caption{Global indeterminacy in the space ($E,K,L$); the black trajectory (in bold) approaching $P_2^*=(E_2^*,K_2^*,L^*=0.444444)$ starts from the point $(E_1^*,K_1^*,L_0\simeq 0.345910588598)$; parameter values: $\alpha=0.1$, $\beta=0.8$, $\gamma=0.58$, $\delta=0.05$, $\epsilon=1$, $\eta=1.5$, $\theta=0.001$, $\bar{E}=0.17$.}
+	\label{fig:global_indeter}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\linewidth]{traj_spiraling_to_P2.png}
+	\caption{A trajectory spiraling toward $P_2^*$ starting from the point ($E_1^*,K_1^*,L_0 \simeq 0.6316546$) plotted with a low end time $(T=100)$; parameter values: $\alpha=\theta=0.19$, $\beta=\gamma=0.8$, $\epsilon=0.2$, $\eta=\frac{4}{9}$, $\delta=12.8620934285269$, $\overline{E}=10.75$.}
+	\label{fig:traj_spiral_P2}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\linewidth]{traj_spiraling_to_P2_with_limit_cycle_P1.png}
+	\caption{The same trajectory spiraling toward $P_2^*$ starting from the point ($E_1^*,K_1^*,L_0 \simeq 0.6316546$) as in Figure \ref{fig:traj_spiral_P2} but plotted with a high end time $(T=1000)$; the same parameter values.}
+	\label{fig:traj_spiral_P2_with_limit_cycle_P1}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\linewidth]{from_P2_to_limit_cycle_P1.png}
+	\caption{Starting from the point $(E_2^*,K_2^*,L_0 \simeq 0.815)$, "very close" to $P_2^*=(E_2^*,K_2^*,L^*=0.8)$, the trajectory approaches the attracting limit cycle surrounding $P_1^*$; the parameter values are those used in Figure \ref{fig:traj_spiral_P2}.}
+	\label{fig:from_P2_to_limit_cycle_P1}
+\end{figure}
 Therefore, under the assumptions of the theorem, for any initial point $(E_0, K_0)$ sufficiently close to $(E_1^*, K_1^*)$, there exists a continuum of initial values $L_0^1$ such that the trajectory starting from $(E_0, K_0, L_0^1)$ approaches $P_1^*$, and a locally unique value $L_0^2$ such that the trajectory starting from $(E_0, K_0,L_0^2)$ converges to $P_2^*$. So global indeterminacy occurs, since, from the initial position $(E_0, K_0)$, the economy may follow one of the trajectories belonging to the basin of attraction of the 'poverty trap' $P_1^*$ but it may also follow a trajectory lying on the stable manifold of the stationary state $P_2^*$.
 
-In Figure \ref{fig:TBA} a numerical simulation is shown. The starting points of the trajectories are chosen along the half-line $\{E=E_1^*, K=K_1^*, L<L^*\}$. The trajectory in bold lies on the stable manifold of $P_2^*$ and consequently converges to $P_2^*$, while all the others approach $P_1^*$. Notice that some trajectories approaching $P_1^*$ are characterized by an initial phase where the values of $K$ and $L$ are higher than along the trajectory converging to $P_2^*$; however, the higher values of $K$ and $L$ give rise to over-exploitation of the natural resource and the consequent reduction of the stock $E$ drives the economy towards the undesirable equilibrium $P_1^*$, where the values of $K$ and $E$ are lower than in $P_2^*$.
+In Figure \ref{fig:global_indeter} a numerical simulation is shown. The starting points of the trajectories are chosen along the half-line $\{E=E_1^*, K=K_1^*, L<L^*\}$. The trajectory in bold lies on the stable manifold of $P_2^*$ and consequently converges to $P_2^*$, while all the others approach $P_1^*$. Notice that some trajectories approaching $P_1^*$ are characterized by an initial phase where the values of $K$ and $L$ are higher than along the trajectory converging to $P_2^*$; however, the higher values of $K$ and $L$ give rise to over-exploitation of the natural resource and the consequent reduction of the stock $E$ drives the economy towards the undesirable equilibrium $P_1^*$, where the values of $K$ and $E$ are lower than in $P_2^*$.
 
-In the main model studied in this work, global indeterminacy can occur even if the assumptions of Lemma \ref{lemma:7_subdivision_of_phase_space} are not satisfied, as the trajectories drawn in Figures \ref{fig:TBA} suggest.
 
-In Figures \ref{fig:TBA} and \ref{fig:TBA}, $P_1^*=(E_1^*,K_1^*,L^*)$ has one negative and two positive real part complex eigenvalues, while $P_2^*$ has one positive and two negative real part complex eigenvalues. Numerical simulations suggest the existence of an attracting limit cycle surrounding $P_1^*$. In Figure \ref{fig:TBA} the
-point $(E_1^*,K_1^*,L_0)$, lying on the half-line $\{E = E_1^*,\ K = K_1^*,\ L < L^*\}$, appears to belong to the stable manifold of $P_2^*$ (i.e. the trajectory starting from it approaches $P_2^*$). Using the same parameter values of Figure \ref{fig}, the simulation in Figure \ref{fig} shows a trajectory starting from a point on the half-line $\{E = E_2^*, K = K_2^*, L > L^*\}$, very close to the saddle-point $P_2^*$, which approaches
+In the main model studied in this work, global indeterminacy can occur even if the assumptions of Lemma \ref{lemma:7_subdivision_of_phase_space} are not satisfied, as the trajectories drawn in Figures \ref{fig:traj_spiral_P2}-\ref{fig:from_P2_to_limit_cycle_P1} suggest.
+
+In those figures, $P_1^*=(E_1^*,K_1^*,L^*)$ has one negative and two positive real part complex eigenvalues, while $P_2^*$ has one positive and two negative real part complex eigenvalues (computed with the already implemented code, see appendix \ref{app:A}). Numerical simulations suggest the existence of an attracting limit cycle surrounding $P_1^*$. In Figure \ref{fig:traj_spiral_P2} the
+point $(E_1^*,K_1^*,L_0)$, lying on the half-line $\{E = E_1^*,\ K = K_1^*,\ L < L^*\}$, appears to belong to the stable manifold of $P_2^*$ (i.e. the trajectory starting from it approaches $P_2^*$). Using the same parameter values of Figure \ref{fig}, the simulation in Figure \ref{fig:from_P2_to_limit_cycle_P1} shows a trajectory starting from a point on the half-line $\{E = E_2^*, K = K_2^*, L > L^*\}$, very close to the saddle-point $P_2^*$, which approaches
 the attracting limit cycle surrounding $P_1^*$.
-
-Figure \ref{fig} shows the occurrence of two limit cycles. In this case $P_1^*$ has one negative and two positive real part complex eigenvalues, while $P_2^*$ is a source (three positive real part eigenvalues). The simulation shows an attracting limit cycle surrounding $P_1^*$ and a not-attracting one arisen around $P_2^*$ through a Hopf bifurcation and endowed with a two-dimensional stable manifold, which bounds, as a separatrix, the basin of the attracting limit cycle.

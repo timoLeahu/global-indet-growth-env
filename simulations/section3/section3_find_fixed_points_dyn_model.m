@@ -25,8 +25,8 @@ xSol = vpa(sol.x); % K
 ySol = vpa(sol.y); % E
 zSol = vpa(sol.z); % L
 if size(xSol,1) == 2        % 2 fixed points 
-    fprintf('--> P2*=(K,E,L)=(%4.8f, %4.8f, %4.8f)\n', xSol(1),ySol(1),zSol(1));
-    fprintf('--> P1*=(K,E,L)=(%4.8f, %4.8f, %4.8f)\n', xSol(2),ySol(2),zSol(2));
+    fprintf('--> P1*=(K,E,L)=(%4.8f, %4.8f, %4.8f)\n', xSol(1),ySol(1),zSol(1));
+    fprintf('--> P2*=(K,E,L)=(%4.8f, %4.8f, %4.8f)\n', xSol(2),ySol(2),zSol(2));
 elseif size(xSol,1) == 1    % 1 fixed point
     fprintf('--> P1*=(K,E,L)=(%4.8f, %4.8f, %4.8f)\n', xSol(1),ySol(1),zSol(1));
 else % case the solver gives me also spurious sol or no real sol

@@ -4,15 +4,15 @@
 
 clear
 %% parameters
-alpha = 0.19;
+alpha = 0.1;
 beta = 0.8; 
-gamma = 0.8;
-delta = 12.8620934285269;
-epsil = 0.2;
-eta = 4/9;
-theta = 0.19;
-E_bar = 10.75;
+gamma = 0.58;
+delta = 0.05;
+epsil = 1;
+eta = 1.5;
+theta = 0.001;
 % E_bar = 0.167159; % value which g'(E_bar)
+E_bar = 0.17;
 star_L = beta/(beta+epsil);
 
 %% >> def fixed point P* with E_bar=0.21
@@ -25,15 +25,9 @@ star_L = beta/(beta+epsil);
 % E=0.031860545540;
 % L=star_L;
 % >> def second fixed point P* with E_bar=0.17
-% K=13.11009169;
-% E=0.0591165274446;
-% L=star_L;
-% >> def second fixed point P* with E_bar=10.75
-K=0.21031403;
-E=0.25781852;
+K=13.11009169;
+E=0.0591165274446;
 L=star_L;
-% --> P2*=(K,E,L)=(0.21031403, 0.25781852, 0.80000000)
-% --> P1*=(K,E,L)=(0.04527692, 0.05444843, 0.80000000)
 
 %% equations
 f = @(x) epsil*((1-x)^((epsil-eta*(1+epsil))/eta))*(x^(1-beta))/beta; 

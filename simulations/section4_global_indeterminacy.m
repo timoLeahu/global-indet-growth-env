@@ -1,10 +1,11 @@
 %%%% Simulation of the 3 dynamical system eqns dot{K}, dot{E}, dot{L}
-% realization of two trajectories in the space starting form an arbitrary
-% point and the fixed point P*. Code that generates the Fig 3 in report
+% realization some trajectories in the space starting form points
+% on the line (E1*,K1*, L) with L<L*=0.444444
+% fist trajectory goes to point P2*; the others converge to P1*
 
 clear; close all;
 t0=0;
-T=2500;
+T=3000;
 h=0.1;
 %% parameters of the model
 alpha = 0.1;
@@ -13,11 +14,9 @@ gamma = 0.58;
 delta = 0.05;
 epsil = 1;
 eta = 1.5;
-theta = 0.001;
+theta = 0.001;  
 E_bar = 0.17;
 star_L = beta/(beta+epsil);
-% repr. ratio f(L*)/f'(L*)
-%f_ratio=(beta*epsil*eta)/((beta+epsil)*(eta*(beta+epsil)-(beta*epsil)));
 
 %% equations
 f = @(x) epsil*((1-x)^((epsil-eta*(1+epsil))/eta))*(x^(1-beta))/beta; 
@@ -40,10 +39,10 @@ plot3(0.0591165274446,13.11009169,0.4444,'o', 'MarkerFaceColor','red') %P2*
 xlabel('E')
 ylabel('K')
 zlabel('L')
-% plot a plane at level L*=0.44444
+% plot a plane at level L*=0.44444 in grey
 patch([0 0 0.1 0.1] , [6 16 16 6], [star_L star_L star_L star_L], [.7 .7 .7], 'FaceAlpha', 0.2)
 
-%% Runge-Kutta
+%% Trajectories with Runge-Kutta
 
 N=(T-t0)/h;% timesteps
 tt= t0:h:T;
@@ -55,6 +54,7 @@ for j=1:12
     Elv(1)=0.031860545540;
     Klv(1)=8.802396759;
     Llv(1)=0.345910588598+(j-1)*0.005; 
+    plot3(Elv(1),Klv(1),Llv(1),'o','MarkerSize',2)
     
     N=(T-t0)/h;
     tt= t0:h:T;
@@ -76,7 +76,13 @@ for j=1:12
         Elv(n+1) = Elv(n) + h*(K1e + 2*K2e + 2*K3e + K4e)/6;
         Llv(n+1) = Llv(n) + h*(K1l + 2*K2l + 2*K3l + K4l)/6;
     end
-    plot3(Elv,Klv,Llv)
+    if j==1
+        plot3(Elv,Klv,Llv,'LineWidth',2,'Color','k')
+    else
+        plot3(Elv,Klv,Llv)
+    end
     
 end
+%legend('Fixed point P_1^* (sink)','Fixed point P_2^* (saddle)')
+box on
 hold off

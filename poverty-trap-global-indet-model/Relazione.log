@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  19 DEC 2023 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.31)  21 DEC 2023 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1243,57 +1243,78 @@ een already used, duplicate ignored
 l.27 ...-2\alpha-\gamma)}{\alpha\beta\gamma\eta}$$
                                                    are satisfied and that $P...
 ]
-Overfull \hbox (5.24666pt too wide) in paragraph at lines 62--63
+<./Figure/global_indeterminacy.png, id=348, 1407.2575pt x 1009.7725pt>
+File: ./Figure/global_indeterminacy.png Graphic file (type png)
+<use ./Figure/global_indeterminacy.png>
+Package pdftex.def Info: ./Figure/global_indeterminacy.png  used on input line 
+64.
+(pdftex.def)             Requested size: 345.0pt x 247.5428pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figure/traj_spiraling_to_P2.png, id=349, 635.0124pt x 379.6584pt>
+File: ./Figure/traj_spiraling_to_P2.png Graphic file (type png)
+<use ./Figure/traj_spiraling_to_P2.png>
+Package pdftex.def Info: ./Figure/traj_spiraling_to_P2.png  used on input line 
+70.
+(pdftex.def)             Requested size: 276.00105pt x 165.01683pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figure/traj_spiraling_to_P2_with_limit_cycle_P1.png, id=350, 911.5656pt x 45
+8.1918pt>
+File: ./Figure/traj_spiraling_to_P2_with_limit_cycle_P1.png Graphic file (type 
+png)
+<use ./Figure/traj_spiraling_to_P2_with_limit_cycle_P1.png>
+Package pdftex.def Info: ./Figure/traj_spiraling_to_P2_with_limit_cycle_P1.png 
+ used on input line 76.
+(pdftex.def)             Requested size: 276.00105pt x 138.72404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figure/from_P2_to_limit_cycle_P1.png, id=353, 527.0892pt x 399.4122pt>
+File: ./Figure/from_P2_to_limit_cycle_P1.png Graphic file (type png)
+<use ./Figure/from_P2_to_limit_cycle_P1.png>
+Package pdftex.def Info: ./Figure/from_P2_to_limit_cycle_P1.png  used on input 
+line 82.
+(pdftex.def)             Requested size: 276.00105pt x 209.15213pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (5.24666pt too wide) in paragraph at lines 86--87
 []\T1/cmr/m/n/10 Therefore, un-der the as-sump-tions of the the-o-rem, for any 
 ini-tial point $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E[]; K[]\OT1/cmr/m/n/10 )$
  []
 
-[17]
-
-LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 64.
-
-
-LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 66.
-
-
-LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
-
-
-LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
-
-
-LaTeX Warning: Reference `fig:TBA' on page 18 undefined on input line 68.
-
-
-LaTeX Warning: Reference `fig' on page 18 undefined on input line 69.
-
-
-LaTeX Warning: Reference `fig' on page 18 undefined on input line 69.
-
-
-LaTeX Warning: Reference `fig' on page 18 undefined on input line 72.
-
-) [18
+[17] [18
 pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
 been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \clearpage
-               
+l.87 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{thm.10}) has 
 been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \clearpage
-               ] (Relazione.bbl [19
+l.87 
+      <./Figure/global_indeterminacy.png> <./Figure/traj_spiraling_to_P2.png (P
+NG copy)>] [19 <./Figure/traj_spiraling_to_P2_with_limit_cycle_P1.png (PNG copy
+)> <./Figure/from_P2_to_limit_cycle_P1.png (PNG copy)>]
 
-]) [20] (Sezioni/AppendixA.tex
+LaTeX Warning: Reference `fig' on page 20 undefined on input line 94.
+
+) [20] (Relazione.bbl [21
+
+]) [22] (Sezioni/AppendixA.tex
 Overfull \hbox (1.8913pt too wide) in paragraph at lines 5--6
 []\T1/cmr/m/n/10 The code which gen-er-ates the Fig-ures []2[] and []3[] is de-
 fined in the file $\T1/cmtt/m/n/10 '[]section3 _
  []
 
-) [21] (Relazione.aux)
+) [23] (Relazione.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
@@ -1303,13 +1324,13 @@ L3 programming layer <2023-10-23>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 89C7399E849F458BD3380EDB2CF4D5ED;1015.
+(rerunfilecheck)             Checksum: 53CA61A28B14BEBF24D7E45A55C1A0A0;1026.
  ) 
 Here is how much of TeX's memory you used:
- 37920 strings out of 474717
- 841780 string characters out of 5758250
+ 37965 strings out of 474717
+ 843556 string characters out of 5758250
  1949036 words of memory out of 5000000
- 59237 multiletter control sequences out of 15000+600000
+ 59276 multiletter control sequences out of 15000+600000
  573502 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,19n,117p,1677b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1343,9 +1364,9 @@ type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX/fonts/type1/public
 /cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Relazione.pdf (22 pages, 1722024 bytes).
+Output written on Relazione.pdf (24 pages, 2112641 bytes).
 PDF statistics:
- 922 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 959 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
