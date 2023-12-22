@@ -5,5 +5,5 @@
 \contentsline {paragraph}{\underline {Dynamics}.}{6}{section*.3}%
 \contentsline {section}{\numberline {3}Fixed points, stability and Hopf bifurcations}{8}{section.3}%
 \contentsline {section}{\numberline {4}Global analysis and Conclusion}{15}{section.4}%
-\contentsline {section}{References}{21}{figure.caption.12}%
+\contentsline {section}{References}{21}{figure.caption.13}%
 \contentsline {section}{\numberline {A}Implementations in Matlab}{23}{appendix.A}%

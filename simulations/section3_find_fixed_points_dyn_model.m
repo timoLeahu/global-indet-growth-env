@@ -6,11 +6,11 @@ clear
 alpha = 0.19;
 beta = 0.8; 
 gamma = 0.8;
-delta = 12.8620934285269;
+delta = 8.42228;
 epsil = 0.2;
 eta = 4/9;
 theta = 0.19;
-E_bar = 10.75;
+E_bar = 7.06;
 
 %% equations
 syms x y z % respectively K E L
